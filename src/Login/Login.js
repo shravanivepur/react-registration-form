@@ -82,6 +82,11 @@ function Login() {
             return
         }
 
+        if (address.trim() === "") {
+        alert("Please enter your address.");
+        return;
+}
+
         alert("Login Successful");
     };
 
@@ -133,12 +138,14 @@ function Login() {
                 onChange={(e) => setPhonenumber(e.target.value)}
                 />
 
-             <input
-              type="textarea"
+             <textarea
               placeholder="Enter your Address"
               value={address}
               onChange={(e) =>setAddress(e.target.value)}
-             />
+              rows="4"
+              >
+             </textarea>
+
                 <input
                     type="password"
                     placeholder="Enter Password"
