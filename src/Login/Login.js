@@ -92,20 +92,19 @@ function Login() {
             <form className="login-box" onSubmit={handleLogin}>
 
                 <h2>Login</h2>
-
+            
                 <input
                 type="text"
                 placeholder=" Enetr FirstName"
                 value={firstname}
                 onChange={(e)=>setFirstname(e.target.value)}
                 />
-
-              <input
-              type ="text"
-              placeholder="Enter Lastname"
-              value={lastname}
-              onChange={(e) => setLastname(e.target.value)}
-              />
+                <input
+                 type ="text"
+                 placeholder="Enter Lastname"
+                 value={lastname}
+                 onChange={(e) => setLastname(e.target.value)}
+                />
                 
                 <input 
                 type ="text"
